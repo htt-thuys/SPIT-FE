@@ -1,0 +1,44 @@
+
+body{
+ /*   background-color: #003056; */
+}
+
+li{
+    list-style: none;
+}
+
+.header-site {
+    padding: 2rem 0;
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: rgba(127, 137, 161, 0.604) 0px 0px 3rem;
+    transition: padding 0.3s ease 0s;
+}
+
+
+.logo{
+    margin-left: 30px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.bar-section{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bar-section li{
+    padding: 10px;
+}
+
+.bar-section a{
+    text-decoration: none;
+}
