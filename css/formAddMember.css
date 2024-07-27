@@ -12,36 +12,36 @@ body.bg-img {
 
 /* Mặc định cho tất cả các màn hình */
 body {
-  background-image: url('../images/background.jpg');
+  background-image: url('../images/formAddMemeber/background.jpg');
 }
 
 @media (max-width: 576px) {
   body {
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/formAddMemeber/background.jpg');
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
   body {
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/formAddMemeber/background.jpg');
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   body {
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/formAddMemeber/background.jpg');
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   body {
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/formAddMemeber/background.jpg');
   }
 }
 
 @media (min-width: 1200px) {
   body {
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/formAddMemeber/background.jpg');
   }
 }
 
