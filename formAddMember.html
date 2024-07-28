@@ -82,7 +82,8 @@
         </form>
       </div>
 
-      <button type="submit" class="btn btn-outline-primary mt-3 mb-3" style="min-width: 70px; min-height: 70px;" id="submitBtn">
+      <button type="submit" class="btn btn-outline-primary mt-3 mb-3" style="min-width: 70px; min-height: 70px;"
+        id="submitBtn">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg"
           viewBox="0 0 16 16">
           <path
@@ -94,10 +95,27 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalLabel">Thông Báo</h5>
+              <h5 class="modal-title" id="modalLabel">Chào Mừng bạn đến với trang đăng ký thành viên của CLB</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="description">
+              
+              🔎 Nếu như đây là những gì bạn đang tìm kiếm <br>
+              👉 Cơ hội được học hỏi và làm việc trực tiếp với các thành viên gạo cội của CLB Hỗ trợ Lập trình - là <br>
+              những người từng đạt được nhiều giải thưởng tại các sân chơi lập trình thi đấu từ cấp trường đến cấp quốc <br>
+              gia và hơn thế nữa. <br>
+              👉 Nâng cấp kỹ năng học thuật về lập trình, tư duy đưa ra ý kiến và giải quyết vấn đề. <br>
+              👉 Hỗ trợ giảng viên và các bạn sinh viên trong các môn học như Nhập môn lập trình, Kỹ thuật lập trình,… <br>
+              đồng thời nhận được kinh phí hỗ trợ theo từng tiết học. <br>
+              👉 Một môi trường giúp bạn học hỏi và hoàn thiện bản thân hơn. <br>
+              👉 Nhiều cơ hội khác khi bạn đồng hành lâu dài với CLB. <br>
+              👇 Và bạn đang có những yếu tố sau: <br>
+              ✅ Yêu thích, có nền tảng nhất định đối với bộ môn lập trình <br>
+              ✅ Mong muốn đem kiến thức và lòng nhiệt huyết của bản thân để giúp đỡ các bạn khác trong việc học tập các
+              môn lập trình <br>
+              ✅ Có tư duy cởi mở, có sự chủ động tìm tòi và học hỏi <br>
+              💖 ✨ Nếu những dòng phía trên đang mô tả về các bạn, vậy thì hãy trở thành một phần của CLB Hỗ trợ Lập <br>
+              trình nhé. Chúng mình luôn sẵn sàng chào đón các bạn! <br>
 
             </div>
             <div class="modal-footer">
@@ -111,22 +129,29 @@
   </div>
 
   <script>
+    //Bật qua site là hiện lên modal
+    document.addEventListener('DOMContentLoaded', function () {
+      var modal = new bootstrap.Modal(document.getElementById('modal'));
+      modal.show();
+    });
+
     document.getElementById('submitBtn').addEventListener('click', function (event) {
+
       var form = document.getElementById('form');
       var isValid = form.checkValidity();
 
-      if (isValid) {
+      document.getElementById('modalLabel').innerText = "Thông Báo !" 
 
+
+      if (isValid) {
         document.getElementById('description').innerText = 'Bạn đã đăng kí thành công, vui lòng đợi mail phản hồi !!';
-      
       } else {
-       
         document.getElementById('description').innerText = 'Dữ liệu bạn nhập có vấn đề vui lòng thử lại';
-     
       }
 
       var modal = new bootstrap.Modal(document.getElementById('modal'));
       modal.show();
+      
     });
   </script>
 </body>
