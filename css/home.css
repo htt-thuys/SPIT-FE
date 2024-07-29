@@ -1,31 +1,26 @@
-
 body{
- /*   background-color: #003056; */
+    padding-top: 67px;
 }
 
-li{
+.main{
+    background-color: #003056;
+}
+
+.spitbar{
+   background-color: #0F1923;
+}
+
+li.col{
     list-style: none;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
 }
 
-.header-site {
-    padding: 2rem 0;
-    background-color: var(--white-color);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: rgba(127, 137, 161, 0.604) 0px 0px 3rem;
-    transition: padding 0.3s ease 0s;
-}
-
-
-.logo{
-    margin-left: 30px;
-}
-
-.logo img{
-    width: 50px;
+a.nav-link{
+    border-radius: 7px;
+    padding: 5px;
+    width: fit-content;
 }
 
 .bar-section{
@@ -34,11 +29,55 @@ li{
     align-items: center;
     justify-content: flex-start;
 }
+/* 
+    bodycolor: #0F1923
+    default: #003056
+    */
+a.nav-link:hover{
+    color: #ffffff;
+    /* border-bottom:  solid #ffffff; */
+    background-color: #ffffff25;
 
-.bar-section li{
-    padding: 10px;
 }
 
-.bar-section a{
-    text-decoration: none;
+
+.dropdown-menu a{
+    background: #0F1923;
+    color: #ffffff7b;
+    border-radius: 7px;
+}
+.dropdown-menu.show{
+    background-color: #0F1923 ;
+}
+
+.dropdown-menu a:hover{
+    background: #0F1923;
+    color: #ffffff;
+}
+
+
+.dropdown-menu p{
+    padding: 0px ;
+    border-radius: 7px;
+    font-family: "FF Mark W05", Arial, sans-serif; 
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.dropdown-menu p:hover{
+    background-color: rgba(255, 255, 255, 0.086);
+}
+
+li.nav-item{
+    border-bottom: #0F1923 solid 3px;
+}
+
+li.nav-item:hover{
+    border-bottom: #ffffff solid 3px;
+}
+
+.footer{
+    background: #0F1923;
+    height: 100px;
+    color: white;
 }
