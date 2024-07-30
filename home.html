@@ -16,6 +16,7 @@
 </head>
 
 <body style="background: #003056;">
+    <!-- Navbar -->
     <nav class="spitbar navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid row align-items-center">
             <a class="navbar-brand col-md-5 col " style="justify-content: center;" href="/home.html">
@@ -61,7 +62,7 @@
                         </span>
                     </li>
                     <li class="nav-item" style="padding: 5px 6px;">
-                        <a class="nav-link" href="/introduce.html">GIỚI THIỆU</a>
+                        <a class="nav-link" href="/introduce.html">HOẠT ĐỘNG</a>
                     </li>
                     <li class="nav-item" style="padding: 5px 6px;">
                         <a class="nav-link" href="#">THÀNH VIÊN</a>
@@ -76,13 +77,64 @@
             </div>
         </div>
     </nav>
-
-    <div class="container-fluid main" style="height:800px">
-        <div>
-            <video src=""></video>
+    <!-- Content -->
+    <div class="container-fluid main" style="padding: 0; ">
+        <!-- Top content here! -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active " style="background-color: black;">
+                    <img src="/images/home/SPIT-mem.jpg" class="d-block w-100 z-0" style="opacity: 75%;" alt="...">
+                    <h1 class=" carousel-caption z-1 "
+                        style="font-family: Neue Frutiger World, Tahoma, sans-serif; font-weight:bolder; font-size:100px; opacity: 80%; top: 30%; line-height: none;">
+                        WE ARE SPIT!</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Tổng quan về CLB -->
+        <div class="container-fluid p-50 div-white" id="TongQuan">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-5 col-xs-10 p-l-50" style="color: black;">
+                    <h2 class="title">Tổng quan</h2>
+                 
+                    <div class="container m-5 textarea">
+                        <h3 class="subtitle">// WE ARE SPIT</h3>
+                        <p class="text">
+                            CLB Hỗ trợ Lập trình (Support Programming Information Technology, viết tắt SPIT) Trường Đại
+                            học Khoa học Huế, được thành lập vào ngày 18/9/2023 dưới sự chỉ đạo của Hội Sinh viên trường
+                            và ban cố vấn thuộc Khoa Công nghệ thông tin, Trường Đại học Khoa học, Đại học Huế.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xs-10 p-30">
+                    <img src="/images/home/SPIT-girls.JPG" alt="" class="rounded-5 img-fluid"
+                        style="border:solid black 3px; border-radius: 7px;">
+                </div>
+            </div>
+        </div>
+        <!-- Hoạt động -->
+        <div class="container-fluid p-50 div-blue">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-5 col-xs-10 p-30">
+                    <img src="/images/activities/seminar-2.jpg" alt="" class="rounded-5 img-fluid"
+                        style="border:solid #ece8e1 3px; border-radius: 7px;">
+                </div>
+                <div class="col-lg-5 col-xs-10 p-l-50 d-flex flex-column justify-content-center" style="color: #ece8e1">
+                    <h2 class="title">HOẠT ĐỘNG</h2>
+                    <div class="container m-5 textarea">
+                        <h3 class="subtitle">// OUR ACTIVITIES</h3>
+                        <p class="text">
+                            Các hoạt động của CLB xoay quanh việc đồng hành cùng thầy cô trong quá trình hướng dẫn và sửa chữa bài tập với các môn học tập trình căn bản, tổ chức các buổi seminar và hỗ trợ các cuộc thi học thuật của khoa và nhà trường.
+                        </p>
+                    </div>
+                    <a href="/introduce.html" class="align-self-center">
+                    <button class="btn btn-outline-light btn-lg ">TÌM HIỂU</button>
+                    </a>
+                </div>
+                
+            </div>
         </div>
     </div>
-
+    <!-- Footer here -->
     <div class="container-fluid footer p-30">
         <div class="container">
             <ul class="row d-flex justify-content-center">
@@ -104,7 +156,8 @@
                 <li class="col-auto "><a class="d-flex justify-content-end" href="#"><img style="width: 70px;"
                             src="/images/logo-bg/logo_HUSC.png" alt=""></a>
                 </li>
-                <li class="col-auto"><a href="#"><img style="width: 80px;" src="/images/logo-bg/logo_KCNTT.png" alt=""></a>
+                <li class="col-auto"><a href="#"><img style="width: 80px;" src="/images/logo-bg/logo_KCNTT.png"
+                            alt=""></a>
                 </li>
                 <li class="col-auto"><a class="d-flex justify-content-start" href="#"><img style="width: 80px;"
                             src="/images/logo-bg/logo-SPIT.png" alt=""></a>
@@ -134,7 +187,7 @@
                 </p>
             </div>
 
-            
+
         </div>
     </div>
 </body>
