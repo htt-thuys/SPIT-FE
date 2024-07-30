@@ -1,11 +1,12 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-top: 10vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body.bg-img {
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -50,4 +51,6 @@ body {
   background-color: white;
   border-radius: 10px ;
   border: 3px solid #003056;
+  margin-bottom: 7vh;
+
 }
