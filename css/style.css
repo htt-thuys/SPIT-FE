@@ -1,4 +1,28 @@
+.title-container {
+    font-weight: 500;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 1.2;
+    font-family: monospace;
+    padding-left: 30px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #eae9e9;
+}
 
+.title-container::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #b1b1b1;
+    margin-top: 10px;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 200px;
+}
 .All_div .waviy {
     padding-top: 30px;
     text-align: center;
@@ -11,55 +35,16 @@
     margin-right: 6px;
     margin-bottom: 30px;
 }
-.All_div .title-container h2 {
-    margin-bottom: .5rem;
-    font-weight: 500;
-    margin-left: 30px;
-    margin-right: 30px;
-    line-height: 1.2;
-    font-family: monospace;
-    font-size: 50px;
-    padding-left: 30px;
-    display: inline-block;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #eae9e9;;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-/* .title-container {
-    display: inline-block;
-    position: relative;
-}
-.title {
-    display: inline-block;
-    margin: 0;
-    cursor: pointer;
-}
-.member-count {
-    display: inline-block;
-    white-space: nowrap;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-    margin-left: 10px;
-    position: absolute;
-}
-.title-container:hover .member-count {
-    opacity: 1;
-    transform: translateX(0);
-} */
 /* Ban chu nhiem */
 #wrapper ul.members{
-    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 #wrapper ul.members li {
     flex-basis: 25%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
     padding-bottom: 30px;
 }
