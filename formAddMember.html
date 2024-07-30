@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Tuyển Thành Viên</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/formAddMember.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="bg-img d-flex align-items-center justify-content-center">
+  <div id="form_div" class="container-xs p-5">
+    <div class="d-flex flex-column align-items-center">
+      <div class="col mb-5" style="font-size: 20px;">
+        Đăng Kí Trở Thành Thành Viên Clb
+      </div>
+      <div class="col mb-3">
+        <img class="rounded-circle" src="images/formAddMemeber/Logo.jpg" alt="Logo Form" style="max-width: 100px;">
+      </div>
+      <div class="col">
+        <form id="form">
+          <div class="row  mb-3 mt-4">
+            <div class="col">
+              <label class="form-label" for="firstName">Họ</label>
+              <input class="form-control" type="text" id="firstName" required>
+            </div>
+
+            <div class="col">
+              <label class="form-label" for="lastName">Tên</label>
+              <input class="form-control" type="text" id="lastName" required>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" id="email" required>
+          </div>
+
+          <div class="row mb-3">
+            <label class="form-label" for="sdt">Số điện thoại</label>
+            <input class="form-control" type="tel" id="sdt" required>
+          </div>
+
+          <div class="row mb-3">
+            <label class="form-label" for="class">Lớp</label>
+            <input class="form-control" type="text" id="class" required>
+          </div>
+
+          <div class="row mb-3">
+            <label class="form-label" for="year">Là sinh viên năm: </label>
+            <select class="form-select" id="year" required>
+              <option value="" disabled selected>Chọn năm</option>
+              <option value="1">Năm 1</option>
+              <option value="2">Năm 2</option>
+              <option value="3">Năm 3</option>
+              <option value="4">Năm 4</option>
+            </select>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col">
+              <label class="form-label" for="NMLT">Điểm NMLT hệ 4</label>
+              <input class="form-control" type="text" id="NMLT" required>
+            </div>
+            <div class="col">
+              <label class="form-label" for="KTLT">Điểm KTLT hệ 4</label>
+              <input class="form-control" type="text" id="KTLT" required>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <button type="submit" class="btn btn-outline-primary mt-3 mb-3" style="min-width: 70px; min-height: 70px;"
+        id="submitBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg"
+          viewBox="0 0 16 16">
+          <path
+            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+        </svg>
+      </button>
+
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel">Chào Mừng bạn đến với trang đăng ký thành viên của CLB</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="description">
+              
+              🔎 Nếu như đây là những gì bạn đang tìm kiếm <br>
+              👉 Cơ hội được học hỏi và làm việc trực tiếp với các thành viên gạo cội của CLB Hỗ trợ Lập trình - là <br>
+              những người từng đạt được nhiều giải thưởng tại các sân chơi lập trình thi đấu từ cấp trường đến cấp quốc <br>
+              gia và hơn thế nữa. <br>
+              👉 Nâng cấp kỹ năng học thuật về lập trình, tư duy đưa ra ý kiến và giải quyết vấn đề. <br>
+              👉 Hỗ trợ giảng viên và các bạn sinh viên trong các môn học như Nhập môn lập trình, Kỹ thuật lập trình,… <br>
+              đồng thời nhận được kinh phí hỗ trợ theo từng tiết học. <br>
+              👉 Một môi trường giúp bạn học hỏi và hoàn thiện bản thân hơn. <br>
+              👉 Nhiều cơ hội khác khi bạn đồng hành lâu dài với CLB. <br>
+              👇 Và bạn đang có những yếu tố sau: <br>
+              ✅ Yêu thích, có nền tảng nhất định đối với bộ môn lập trình <br>
+              ✅ Mong muốn đem kiến thức và lòng nhiệt huyết của bản thân để giúp đỡ các bạn khác trong việc học tập các
+              môn lập trình <br>
+              ✅ Có tư duy cởi mở, có sự chủ động tìm tòi và học hỏi <br>
+              💖 ✨ Nếu những dòng phía trên đang mô tả về các bạn, vậy thì hãy trở thành một phần của CLB Hỗ trợ Lập <br>
+              trình nhé. Chúng mình luôn sẵn sàng chào đón các bạn! <br>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    //Bật qua site là hiện lên modal
+    document.addEventListener('DOMContentLoaded', function () {
+      var modal = new bootstrap.Modal(document.getElementById('modal'));
+      modal.show();
+    });
+
+    document.getElementById('submitBtn').addEventListener('click', function (event) {
+
+      var form = document.getElementById('form');
+      var isValid = form.checkValidity();
+
+      document.getElementById('modalLabel').innerText = "Thông Báo !" 
+
+
+      if (isValid) {
+        document.getElementById('description').innerText = 'Bạn đã đăng kí thành công, vui lòng đợi mail phản hồi !!';
+      } else {
+        document.getElementById('description').innerText = 'Dữ liệu bạn nhập có vấn đề vui lòng thử lại';
+      }
+
+      var modal = new bootstrap.Modal(document.getElementById('modal'));
+      modal.show();
+      
+    });
+  </script>
+</body>
+
+</html>
