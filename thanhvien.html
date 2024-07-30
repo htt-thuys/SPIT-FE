@@ -616,7 +616,7 @@
     $(document).ready(function() {
             // Hide the button initially
             $('#backtop').hide();
-            
+            // Button appears when user scrolldown 
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 0) {
                     $('#backtop').fadeIn();
@@ -624,7 +624,7 @@
                     $('#backtop').fadeOut();
                 }
             });
-
+            // Press button which it will scrollup to the top navbar
             $("#backtop").click(function() {
                 $('html, body').animate({
                     scrollTop: 0
