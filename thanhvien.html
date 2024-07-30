@@ -37,7 +37,8 @@
             font-size: 50px;
             position: fixed;
             bottom: 40px;
-            right: 20px;
+            right: 40px;
+            cursor: pointer;
         }
         
     </style>
@@ -60,7 +61,6 @@
                         <a class="nav-link dropdown-toggle" href="/home.html" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             TRANG CHỦ 
-
                         <span></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: FF Mark W05, Arial, sans-serif; ">
                             <li><a class="dropdown-item" href="#TongQuan"><p>TỔNG QUAN</p></a></li>
@@ -611,5 +611,21 @@
     </div>
 
 </body>
-
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()) {
+                $('#backtop').fadeIn();
+            } else {
+                $('#backtop').fadeOut();
+            }
+        });
+        $("backtop").click(function(){
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        });
+    });
+</script>
 </html>
