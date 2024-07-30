@@ -78,6 +78,33 @@ li.nav-item:hover{
 
 .footer{
     background: #0F1923;
-    height: 100px;
+    height: max-content;
+    color: white;
+}
+
+li.link-icon{
+    margin: 10px;
+    background: #ffffff20 ;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+li.link-icon:hover{
+    background: #ffffff30;
+}
+
+.footer{
+    color: #ffffffb7;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+}
+
+.footer a{
+    color: hsl(215, 50%, 49%) ;
+}
+
+.footer path{
     color: white;
 }

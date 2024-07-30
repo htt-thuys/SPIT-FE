@@ -1,8 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  margin-top: 10vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20vh;
 }
 
 body.bg-img {
@@ -48,9 +47,32 @@ body {
 
 
 #form_div{
-  background-color: white;
-  border-radius: 10px ;
-  border: 3px solid #003056;
-  margin-bottom: 7vh;
+  background-color: rgba(255, 255, 255, 0.952);
+  padding: 4vh 4vh;
+  margin-bottom: 10vh;
+  color: black;
+  font-size: 17px;
 
+}
+
+.form-control,.form-select{
+  font-size: 20px;
+
+  height: auto;
+}
+
+.form-label {
+  font-size: 18px;
+}
+
+#submitBtn {
+  font-size: 24px;
+  padding: 15px 30px;
+}
+
+h2{
+  font-size: 28px;
+}
+.modal{
+  color: rgb(199, 197, 197);
 }
