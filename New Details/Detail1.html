@@ -19,20 +19,20 @@
       height: 100%;
       margin: 0;
       background-color: white;
-      font-size: 27px;
-    }
 
-    img {
-      max-width: 800px;
     }
 
     .top {
-      background: linear-gradient(to bottom, #003056 30%, white 50%);
+      background: linear-gradient(to bottom, #003056 30%, white 70%);
       padding-top: 5rem;
       padding-bottom: 5rem;
       box-sizing: border-box;
+      font-size: 27px;
     }
-    
+    .top h2,.top h4{
+      font-size: 30px;
+      font-weight: bold;
+    }
     .row.img img {
       height: auto;
       width: 100%;
@@ -43,69 +43,68 @@
 </head>
 
 <body>
-  <div class="navbar">
 
-    <nav class="spitbar navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid row align-items-center">
-        <a class="navbar-brand col-md-5 col" style="justify-content: center;" href="/home.html">
-          <div class="row d-flex align-items-center justify-content-center text-md-start">
-            <div class="col-3 col-sm-3 text-sm-center" style="padding: 0;"> <img src="/images/logo-bg/logo-SPIT.png"
-                style="width: 50px;">
-            </div>
-            <p class="col d-sm-block d-none"
-              style="margin: 0; width: fit-content; padding: 0; font-family: Anton,sans-serif; font-size:x-large">
-              CLB HỖ
-              TRỢ LẬP TRÌNH</p>
+
+  <nav class="spitbar navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid row align-items-center">
+      <a class="navbar-brand col-md-5 col" style="justify-content: center;" href="/home.html">
+        <div class="row d-flex align-items-center justify-content-center text-md-start">
+          <div class="col-3 col-sm-3 text-sm-center" style="padding: 0;"> <img src="/images/logo-bg/logo-SPIT.png"
+              style="width: 50px;">
           </div>
-        </a>
-        <button class="navbar-toggler col-2 col-md-1" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" collapse navbar-collapse" id="navbarNav"
-          style="width: auto;     margin-left: 30px; margin-right: 30px;">
-          <ul class="navbar-nav d-flex justify-content-between"
-            style="width: 100%; font-size: 15px; font-weight: bold;">
-            <li class="nav-item dropdown justify-content-start align-items-center" style="padding: 5px 6px;">
-              <a class="nav-link dropdown-toggle" href="/home.html" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                TRANG CHỦ
-
-                <span></a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
-                style="font-family: FF Mark W05, Arial, sans-serif; ">
-                <li><a class="dropdown-item" href="#TongQuan">
-                    <p>TỔNG QUAN</p>
-                  </a></li>
-                <li><a class="dropdown-item" href="#HoatDong">
-                    <p>HOẠT ĐỘNG</p>
-                  </a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="/home.html/#CauHoi">
-                    <p>CÁC CÂU HỎI LIÊN QUAN</p>
-                  </a></li>
-              </ul>
-              </span>
-            </li>
-            <li class="nav-item" style="padding: 5px 6px;">
-              <a class="nav-link" href="/introduce.html">GIỚI THIỆU</a>
-            </li>
-            <li class="nav-item" style="padding: 5px 6px;">
-              <a class="nav-link" href="#">THÀNH VIÊN</a>
-            </li>
-            <li class="nav-item" style="padding: 5px 6px;">
-              <a class="nav-link" href="#">TIN TỨC</a>
-            </li>
-            <li class="nav-item" style="padding: 5px 6px;">
-              <a class="nav-link" href="/formAddMember.html">TUYỂN THÀNH VIÊN</a>
-            </li>
-          </ul>
+          <p class="col d-sm-block d-none"
+            style="margin: 0; width: fit-content; padding: 0; font-family: Anton,sans-serif; font-size:x-large">
+            CLB HỖ
+            TRỢ LẬP TRÌNH</p>
         </div>
+      </a>
+      <button class="navbar-toggler col-2 col-md-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" collapse navbar-collapse" id="navbarNav"
+        style="width: auto;     margin-left: 30px; margin-right: 30px;">
+        <ul class="navbar-nav d-flex justify-content-between" style="width: 100%; font-size: 15px; font-weight: bold;">
+          <li class="nav-item dropdown justify-content-start align-items-center" style="padding: 5px 6px;">
+            <a class="nav-link dropdown-toggle" href="/home.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              TRANG CHỦ
+
+              <span></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+              style="font-family: FF Mark W05, Arial, sans-serif; ">
+              <li><a class="dropdown-item" href="#TongQuan">
+                  <p>TỔNG QUAN</p>
+                </a></li>
+              <li><a class="dropdown-item" href="#HoatDong">
+                  <p>HOẠT ĐỘNG</p>
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/home.html/#CauHoi">
+                  <p>CÁC CÂU HỎI LIÊN QUAN</p>
+                </a></li>
+            </ul>
+            </span>
+          </li>
+          <li class="nav-item" style="padding: 5px 6px;">
+            <a class="nav-link" href="/introduce.html">GIỚI THIỆU</a>
+          </li>
+          <li class="nav-item" style="padding: 5px 6px;">
+            <a class="nav-link" href="#">THÀNH VIÊN</a>
+          </li>
+          <li class="nav-item" style="padding: 5px 6px;">
+            <a class="nav-link" href="#">TIN TỨC</a>
+          </li>
+          <li class="nav-item" style="padding: 5px 6px;">
+            <a class="nav-link" href="/formAddMember.html">TUYỂN THÀNH VIÊN</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
+
   <div class="top">
     <div class="container-md">
       <div class="row">
@@ -128,24 +127,25 @@
       </div>
     </div>
   </div>
-  <div class="mid">
+  <div class="mid" style="font-size: 27px;">
     <div class="container-md p-4">
       <div class="row text-black">
         Da Nang Code League là cuộc thi lập trình chuyên nghiệp do công ty FPT Software kết hợp với Trường Đại học Bách
         khoa - ĐHĐN tổ chức, quy tụ hơn 1500 thí sinh đam mê lập trình trên toàn quốc. <br>
       </div>
-      <div class="row mb-4">
-        <span class="text-black"> &#8594; Thông tin về cuộc thi <a href="https://www.danangcodeleague.com/">Da Nang Code League</a></span>
+      <div class="row mb-5">
+        <span class="text-black"> &#8594; Thông tin về cuộc thi <a href="https://www.danangcodeleague.com/">Da Nang Code
+            League</a></span>
       </div>
-      <div class="row mb-4">
+      <div class="row mb-5">
         <img src="/images/News/detail1_1.jpg">
       </div>
-      <div class="row text-black mb-4">
+      <div class="row text-black mb-5">
         Vượt qua hơn 1500 thí sinh và hơn 500 đội thi đấu tại vòng bảng cuộc thi Code League, đội HUSC_Newbie đã xuất
         sắc ghi tên mình vào danh sách 96 thí sinh xuất sắc nhất để thi đấu tại vòng Chung kết diễn ra tại FPT Software
         Đà Nẵng vào ngày 13/7/2024 vừa qua.
       </div>
-      <div class="row img row-cols-2 g-3 mb-4">
+      <div class="row img row-cols-2 gy-5 mb-4">
         <div class="col">
           <img src="/images/News/detail1_2.jpg">
         </div>
@@ -159,26 +159,25 @@
           <img src="/images/News/detail1_5.jpg">
         </div>
       </div>
-      <div class="row text-black mb-4">
+      <div class="row text-black mb-5">
         Tại bảng đấu Code Warrior của cuộc thi năm nay (dành cho sinh viên đại học, cao đẳng) đội HUSC_Newbie với 3
         thành viên:
-
-        <ul class="list-group list-group-flush mt-2">
-          <li class="list-group-item">Anh Lê Ngọc Hoàng</li>
-          <li class="list-group-item">Anh Lê Sỹ Toàn - Phó Chủ nhiệm CLB Hỗ trợ Lập trình</li>
-          <li class="list-group-item">Anh Ngô Văn Hải - Phó Chủ nhiệm CLB Hỗ trợ Lập trình</li>
-        </ul>
-
       </div>
-
-      <div class="row text-black mb-4">
+      <div class="row mb-5">
+        <ul class="list-group">
+          <li class="list-group-item p-4">✨ Anh Lê Ngọc Hoàng</li>
+          <li class="list-group-item p-4">✨ Anh Lê Sỹ Toàn - Phó Chủ nhiệm CLB Hỗ trợ Lập trình</li>
+          <li class="list-group-item p-4">✨ Anh Ngô Văn Hải - Phó Chủ nhiệm CLB Hỗ trợ Lập trình</li>
+        </ul>
+      </div>
+      <div class="row text-black mb-5">
         Bằng sự nỗ lực và kinh nghiệm thi đấu của mình, sau 4 giờ thi đấu đội thi đã đạt top 4 đội có điểm số cao nhất
         tại bảng Warrior và giành huy chương Bạc của cuộc thi.
       </div>
-      <div class="row mb-4">
+      <div class="row mb-5">
         <img src="/images/News/detail1_6.jpg">
       </div>
-      <div class="row text-black mb-4">
+      <div class="row text-black mb-5">
         Một lần nữa, CLB xin được chúc mừng đội thi HUSC_Newbie đã đạt được thành tích cực kỳ ấn tượng trong cuộc thi
         lần này. Mong rằng các bạn sẽ tiếp tục gặt hái được nhiều thành tích hơn ở các cuộc thi tiếp theo!
       </div>

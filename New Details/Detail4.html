@@ -18,82 +18,89 @@
     body {
       height: 100%;
       margin: 0;
-      font-size: 27px;
       background-color: white;
 
     }
 
     .top {
-      background: linear-gradient(to bottom, #003056 30%, white 50%);
+      background: linear-gradient(to bottom, #003056 30%, white 70%);
       padding-top: 5rem;
       padding-bottom: 5rem;
       box-sizing: border-box;
+      font-size: 27px;
+    }
+
+    .top h2,
+    .top h4 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .mid {
+      font-size: 27px;
     }
   </style>
 </head>
 
 <body>
-  <div class="navbar">
-    <nav class="spitbar navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid row align-items-center">
-        <a class="navbar-brand col-md-5 col" style="justify-content: center;" href="/home.html">
-          <div class="row d-flex align-items-center justify-content-center text-md-start">
-            <div class="col-3 col-sm-3 text-sm-center" style="padding: 0;"> <img src="/images/logo-bg/logo-SPIT.png" alt=""
-                style="width: 50px;">
-            </div>
-            <p class="col d-sm-block d-none"
-              style="margin: 0; width: fit-content; padding: 0; font-family: Anton,sans-serif; font-size:x-large">CLB HỖ
-              TRỢ LẬP TRÌNH</p>
+  <nav class="spitbar navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid row align-items-center">
+      <a class="navbar-brand col-md-5 col" style="justify-content: center;" href="/home.html">
+        <div class="row d-flex align-items-center justify-content-center text-md-start">
+          <div class="col-3 col-sm-3 text-sm-center" style="padding: 0;"> <img src="/images/logo-bg/logo-SPIT.png"
+              alt="" style="width: 50px;">
           </div>
-        </a>
-        <button class="navbar-toggler col-2 col-md-1" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" collapse navbar-collapse" id="navbarNav"
-          style="width: auto;     margin-left: 30px; margin-right: 30px;">
-          <ul class="navbar-nav d-flex justify-content-between"
-            style="width: 100%; font-size: 15px; font-weight: bold;">
-            <li class="nav-item dropdown justify-content-start align-items-center" style="padding: 5px 6px;">
-              <a class="nav-link dropdown-toggle" href="/home.html" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                TRANG CHỦ
-
-                <span></a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
-                style="font-family: FF Mark W05, Arial, sans-serif; ">
-                <li><a class="dropdown-item" href="#TongQuan">
-                    <p>TỔNG QUAN</p>
-                  </a></li>
-                <li><a class="dropdown-item" href="#HoatDong">
-                    <p>HOẠT ĐỘNG</p>
-                  </a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="/home.html/#CauHoi">
-                    <p>CÁC CÂU HỎI LIÊN QUAN</p>
-                  </a></li>
-              </ul>
-              </span>
-            </li>
-            <li class="nav-item" style="padding: 5px 6px;">
-              <a class="nav-link" href="/introduce.html">GIỚI THIỆU</a>
-            </li>
-            <li class="nav-item" style="padding: 5px 6px;">
-              <a class="nav-link" href="#">THÀNH VIÊN</a>
-            </li>
-            <li class="nav-item" style="padding: 5px 6px;">
-              <a class="nav-link" href="#">TIN TỨC</a>
-            </li>
-            <li class="nav-item" style="padding: 5px 6px;">
-              <a class="nav-link" href="/formAddMember.html">TUYỂN THÀNH VIÊN</a>
-            </li>
-          </ul>
+          <p class="col d-sm-block d-none"
+            style="margin: 0; width: fit-content; padding: 0; font-family: Anton,sans-serif; font-size:x-large">CLB HỖ
+            TRỢ LẬP TRÌNH</p>
         </div>
+      </a>
+      <button class="navbar-toggler col-2 col-md-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" collapse navbar-collapse" id="navbarNav"
+        style="width: auto;     margin-left: 30px; margin-right: 30px;">
+        <ul class="navbar-nav d-flex justify-content-between" style="width: 100%; font-size: 15px; font-weight: bold;">
+          <li class="nav-item dropdown justify-content-start align-items-center" style="padding: 5px 6px;">
+            <a class="nav-link dropdown-toggle" href="/home.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              TRANG CHỦ
+
+              <span></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+              style="font-family: FF Mark W05, Arial, sans-serif; ">
+              <li><a class="dropdown-item" href="#TongQuan">
+                  <p>TỔNG QUAN</p>
+                </a></li>
+              <li><a class="dropdown-item" href="#HoatDong">
+                  <p>HOẠT ĐỘNG</p>
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/home.html/#CauHoi">
+                  <p>CÁC CÂU HỎI LIÊN QUAN</p>
+                </a></li>
+            </ul>
+            </span>
+          </li>
+          <li class="nav-item" style="padding: 5px 6px;">
+            <a class="nav-link" href="/introduce.html">GIỚI THIỆU</a>
+          </li>
+          <li class="nav-item" style="padding: 5px 6px;">
+            <a class="nav-link" href="#">THÀNH VIÊN</a>
+          </li>
+          <li class="nav-item" style="padding: 5px 6px;">
+            <a class="nav-link" href="#">TIN TỨC</a>
+          </li>
+          <li class="nav-item" style="padding: 5px 6px;">
+            <a class="nav-link" href="/formAddMember.html">TUYỂN THÀNH VIÊN</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
   <div class="top text-black">
     <div class="container-md">
       <div class="row">
@@ -101,11 +108,11 @@
       </div>
       <div class="row mt-3">
         <div class="col pt-4">
-          <p>19/5/2024  </p>
+          <p>19/5/2024 </p>
           <p>CLB Hỗ Trợ Lập Trình</p>
         </div>
         <div class="col-8 pt-4">
-          <h2>Thông Báo  </h2>
+          <h2>Thông Báo </h2>
         </div>
       </div>
       <div class="row">
@@ -118,49 +125,47 @@
   </div>
   <div class="mid text-black">
     <div class="container">
-      <div class="row mb-4">
-        <h4>Thông báo mở cửa phòng tự học cho các bạn thuộc khoa CNTT, cùng với 1 số lưu ý sau:</h4>
-      </div>
+    
 
-      <div class="row mb-4">
+      <div class="row mb-5">
         Tuần sắp tới sẽ là tuần cuối cùng trước khi bước vào kỳ thi kết thúc học phần. Vì vậy, với mong muốn đem đến
         cho các bạn khoa Công nghệ thông tin một không gian học tập ngay tại trường, có cơ sở vật chất hiện đại và tâm
         thế chuẩn bị thật tốt cho kỳ thi, CLB Hỗ trợ Lập trình xin thông báo thời gian mở cửa phòng tự học E202 trong
         tuần này như sau:
       </div>
 
-      <div class="row mb-2">
+      <div class="row mb-5">
         👉 Thời gian: Các ngày từ thứ 2 đến thứ 7 (20/05 → 25/05).
       </div>
 
-      <div class="row mb-4">
+      <div class="row mb-5">
         <ul class="list-group">
-          <li class="list-group-item p-2">⏰ Sáng: 8h00 - 11h00</li>
-          <li class="list-group-item p-2">⏰ Chiều: 14h00 - 17h00</li>
-          <li class="list-group-item p-2">👉 Địa điểm: Phòng E202</li>
+          <li class="list-group-item p-4">⏰ Sáng: 8h00 - 11h00</li>
+          <li class="list-group-item p-4">⏰ Chiều: 14h00 - 17h00</li>
+          <li class="list-group-item p-4">👉 Địa điểm: Phòng E202</li>
         </ul>
       </div>
 
-      <div class="row mb-3">
+      <div class="row mb-5">
         Các bạn có thể đến đây như một không gian học tập và nhờ các thành viên trong CLB hướng dẫn một số bài tập về
         lập trình nhé.
       </div>
 
-      <div class="row mb-2">
+      <div class="row mb-5">
         📌 Ngoài ra, chúng mình cũng có một vài lưu ý cho các bạn:
       </div>
 
-      <div class="row mb-3">
+      <div class="row mb-5">
         <ul class="list-group">
-          <li class="list-group-item p-2">✅ Khi sử dụng phòng tự học, các bạn vui lòng giữ trật tự và giữ vệ sinh để đảm
+          <li class="list-group-item p-4">✅ Khi sử dụng phòng tự học, các bạn vui lòng giữ trật tự và giữ vệ sinh để đảm
             bảo không gian học cho tất cả mọi người.</li>
 
-          <li class="list-group-item p-2">✅ Sẽ có các thành viên trong CLB Hỗ trợ Lập trình trực tại phòng tự học để hỗ
+          <li class="list-group-item p-4">✅ Sẽ có các thành viên trong CLB Hỗ trợ Lập trình trực tại phòng tự học để hỗ
             trợ và giải đáp về các học phần liên quan cho các bạn.</li>
 
-          <li class="list-group-item p-2">⛔️ Trong thời gian thi kết thúc học phần, phòng tự học của chúng mình sẽ KHÔNG
+          <li class="list-group-item p-4">⛔️ Trong thời gian thi kết thúc học phần, phòng tự học của chúng mình sẽ KHÔNG
             hoạt động.</li>
-          <li class="list-group-item p-2">⛔️ CLB chúng mình sẽ KHÔNG nhận giải hộ bài thi dưới bất kỳ hình thức nào, đặc
+          <li class="list-group-item p-4">⛔️ CLB chúng mình sẽ KHÔNG nhận giải hộ bài thi dưới bất kỳ hình thức nào, đặc
             biệt là trong giờ thi. Mọi hành vi có liên quan, chúng mình sẽ có biện pháp xử lý mạnh tay.</li>
         </ul>
       </div>
