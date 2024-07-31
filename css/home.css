@@ -127,7 +127,7 @@ li.link-icon:hover{
     font-size: large;
 }
 
-p.text{
+p.text, li.text{
     text-wrap: balance;
     font-weight: 400;
     font-family: Roboto,arial,georgia,sans-serif;
