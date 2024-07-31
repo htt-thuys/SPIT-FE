@@ -1,0 +1,162 @@
+body{
+    padding-top: 67px;
+}
+
+.main{
+    background-color: #003056;
+}
+
+.spitbar{
+   background-color: #0F1923;
+}
+
+li.col{
+    list-style: none;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+}
+
+a.nav-link{
+    border-radius: 7px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.bar-section{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* 
+    bodycolor: #0F1923
+    default: #003056
+    */
+a.nav-link:hover{
+    color: #ffffff;
+    /* border-bottom:  solid #ffffff; */
+    background-color: #ffffff25;
+
+}
+
+
+.dropdown-menu a{
+    background: #0F1923;
+    color: #ffffff7b;
+    border-radius: 7px;
+}
+.dropdown-menu.show{
+    background-color: #0F1923 ;
+}
+
+.dropdown-menu a:hover{
+    background: #0F1923;
+    color: #ffffff;
+}
+
+
+.dropdown-menu p{
+    padding: 0px ;
+    border-radius: 7px;
+    font-family: "FF Mark W05", Arial, sans-serif; 
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.dropdown-menu p:hover{
+    background-color: rgba(255, 255, 255, 0.086);
+}
+
+li.nav-item{
+    border-bottom: #0F1923 solid 3px;
+}
+
+li.nav-item:hover{
+    border-bottom: #ffffff solid 3px;
+}
+
+.footer{
+    background: #0F1923;
+    height: max-content;
+    color: white;
+}
+
+li.link-icon{
+    margin: 10px;
+    background: #ffffff20 ;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+li.link-icon:hover{
+    background: #ffffff30;
+}
+
+.footer{
+    color: #ffffffb7;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+}
+
+.footer a{
+    color: hsl(215, 50%, 49%) ;
+}
+
+.footer path{
+    color: white;
+}
+
+.title{
+    overflow-wrap: break-word;
+    text-wrap: balance;
+    word-break: break-word;
+    font-family: Anton,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 800%;
+    padding-bottom: var(--spacer-variable-sm);
+    line-height: 150px;
+}
+
+.subtitle{
+    font-family: Roboto,arial,georgia,sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+p.text, li.text{
+    text-wrap: balance;
+    font-weight: 400;
+    font-family: Roboto,arial,georgia,sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.textarea{
+    margin-top: 30px ;
+}
+
+.div-white{
+    background-image: url(/images/logo-bg/bg-white.png);
+    background-position:center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    color: #0F1923;
+}
+
+.div-blue{
+    background-image: url(/images/logo-bg/bg-blue.png);
+    background-position:center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+}
+
+.main button{
+    font-family: Roboto, arial, georgia, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
