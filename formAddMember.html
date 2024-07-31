@@ -10,22 +10,83 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/font.css">
+  <link rel="stylesheet" href="/css/home.css">
   <link rel="stylesheet" href="css/formAddMember.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link rel="icon" href="/images/logo-bg/logo-SPIT.png">
 
 </head>
 
-<body class="bg-img d-flex align-items-center justify-content-center">
-  <div id="form_div" class="container-xs p-5">
-    <div class="d-flex flex-column align-items-center">
-      <div class="col mb-5" style="font-size: 20px;">
-        Đăng Kí Trở Thành Thành Viên Clb
+<body class="bg-img d-flex flex-column align-items-center justify-content-center">
+  <div class="navbar mb-5">
+    <nav class="spitbar navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid row align-items-center">
+        <a class="navbar-brand col-md-5 col" style="justify-content: center;" href="/home.html">
+          <div class="row d-flex align-items-center justify-content-center text-md-start">
+            <div class="col-3 col-sm-3 text-sm-center" style="padding: 0;"> <img src="/images/logo-bg/logo-SPIT.png"
+                alt="" style="width: 50px;">
+            </div>
+            <p class="col d-sm-block d-none"
+              style=" margin: 0; width: fit-content; padding: 0; font-family: Anton,sans-serif; font-size:x-large">CLB
+              HỖ
+              TRỢ LẬP TRÌNH</p>
+          </div>
+        </a>
+        <button class="navbar-toggler col-2 col-md-1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNav"
+          style="width: auto;     margin-left: 30px; margin-right: 30px;">
+          <ul class="navbar-nav d-flex justify-content-between"
+            style="width: 100%; font-size: 15px; font-weight: bold;">
+            <li class="nav-item dropdown justify-content-start align-items-center" style="padding: 5px 6px;">
+              <a class="nav-link dropdown-toggle" href="/home.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                TRANG CHỦ
+
+                <span></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                style="font-family: FF Mark W05, Arial, sans-serif; ">
+                <li><a class="dropdown-item" href="#TongQuan">
+                    <p>TỔNG QUAN</p>
+                  </a></li>
+                <li><a class="dropdown-item" href="#HoatDong">
+                    <p>HOẠT ĐỘNG</p>
+                  </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/home.html/#CauHoi">
+                    <p>CÁC CÂU HỎI LIÊN QUAN</p>
+                  </a></li>
+              </ul>
+              </span>
+            </li>
+            <li class="nav-item" style="padding: 5px 6px;">
+              <a class="nav-link" href="/introduce.html">GIỚI THIỆU</a>
+            </li>
+            <li class="nav-item" style="padding: 5px 6px;">
+              <a class="nav-link" href="#">THÀNH VIÊN</a>
+            </li>
+            <li class="nav-item" style="padding: 5px 6px;">
+              <a class="nav-link" href="#">TIN TỨC</a>
+            </li>
+            <li class="nav-item" style="padding: 5px 6px;">
+              <a class="nav-link" href="/formAddMember.html">TUYỂN THÀNH VIÊN</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col mb-3">
+    </nav>
+  </div>
+
+  <div id="form_div" class="container-xs">
+    <div class="d-flex flex-column align-items-center">
+      <div class="col mb-5" style="font-size: 20px; text-align: center;">
+        <h2>Form Đăng kí thành viên CLB</h2>
+      </div>
+      <div class="col mb-3 d-flex justify-content-center">
         <img class="rounded-circle" src="images/formAddMemeber/Logo.jpg" alt="Logo Form" style="max-width: 100px;">
       </div>
       <div class="col">
@@ -99,13 +160,15 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="description">
-              
+
               🔎 Nếu như đây là những gì bạn đang tìm kiếm <br>
               👉 Cơ hội được học hỏi và làm việc trực tiếp với các thành viên gạo cội của CLB Hỗ trợ Lập trình - là <br>
-              những người từng đạt được nhiều giải thưởng tại các sân chơi lập trình thi đấu từ cấp trường đến cấp quốc <br>
+              những người từng đạt được nhiều giải thưởng tại các sân chơi lập trình thi đấu từ cấp trường đến cấp quốc
+              <br>
               gia và hơn thế nữa. <br>
               👉 Nâng cấp kỹ năng học thuật về lập trình, tư duy đưa ra ý kiến và giải quyết vấn đề. <br>
-              👉 Hỗ trợ giảng viên và các bạn sinh viên trong các môn học như Nhập môn lập trình, Kỹ thuật lập trình,… <br>
+              👉 Hỗ trợ giảng viên và các bạn sinh viên trong các môn học như Nhập môn lập trình, Kỹ thuật lập trình,…
+              <br>
               đồng thời nhận được kinh phí hỗ trợ theo từng tiết học. <br>
               👉 Một môi trường giúp bạn học hỏi và hoàn thiện bản thân hơn. <br>
               👉 Nhiều cơ hội khác khi bạn đồng hành lâu dài với CLB. <br>
@@ -114,9 +177,8 @@
               ✅ Mong muốn đem kiến thức và lòng nhiệt huyết của bản thân để giúp đỡ các bạn khác trong việc học tập các
               môn lập trình <br>
               ✅ Có tư duy cởi mở, có sự chủ động tìm tòi và học hỏi <br>
-              💖 ✨ Nếu những dòng phía trên đang mô tả về các bạn, vậy thì hãy trở thành một phần của CLB Hỗ trợ Lập <br>
-              trình nhé. Chúng mình luôn sẵn sàng chào đón các bạn! <br>
-
+              👉 Thì đây là CLB đáp ứng được những điều bạn hướng đến <br>
+              ✨ WE NEED YOUUUU !!!
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
@@ -127,33 +189,89 @@
     </div>
 
   </div>
+  <div class="container-fluid footer">
 
-  <script>
-    //Bật qua site là hiện lên modal
-    document.addEventListener('DOMContentLoaded', function () {
-      var modal = new bootstrap.Modal(document.getElementById('modal'));
-      modal.show();
-    });
+    <div class="container">
+      <ul class="row d-flex justify-content-center">
+        <li class="col-auto link-icon p-l-15 p-r-15 p-b-5"><a href="#" class="link-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a></li>
+        <li class="col-auto link-icon p-l-15 p-r-15 p-b-5"><a href="#" class="link-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord"
+              viewBox="0 0 16 16">
+              <path
+                d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+            </svg>
+          </a></li>
+      </ul>
+      <ul class="row d-flex justify-content-center">
+        <li class="col-auto "><a class="d-flex justify-content-end" href="#"><img style="width: 70px;"
+              src="/images/logo-bg/logo_HUSC.png" alt=""></a>
+        </li>
+        <li class="col-auto"><a href="#"><img style="width: 80px;" src="/images/logo-bg/logo_KCNTT.png" alt=""></a>
+        </li>
+        <li class="col-auto"><a class="d-flex justify-content-start" href="#"><img style="width: 80px;"
+              src="/images/logo-bg/logo-SPIT.png" alt=""></a>
+        </li>
+      </ul>
+      <div class="d-flex flex-column justify-content-center align-items-center p-t-50px">
+        <h3 class="text-center">
+          Thông tin liên hệ
+        </h3>
+        <h4 class="col-auto m-0">Địa chỉ Email: </h4>
+        <a style="font-size: 14px;" class="col-auto" href="mailto:clbhtlt.ithusc@gmail.com">clbhtlt.ithusc@gmail.com
+        </a>
+        <h4>
+          Số điện thoại liên hệ:
+        </h4>
+        <ul style="font-size: 13px; margin:0">
+          <li style="line-height: 25px;"> <a href="tel:+84702091317">070 209 1317</a> - Thầy Võ Văn
+            Thành - Chủ nhiệm.</li>
+          <li> <a href="tel:+0934766830">0934 766 830</a> - Anh Ngô Văn Hải - Phó chủ nhiệm.</li>
+          <li> <a href="tel:+0934 094 936">0934 094 936</a> - Anh Lê Sỹ Toàn - Phó chủ nhiệm.</li>
+          <li> <a href="tel:+0911544246">0911 544 246</a> - Anh Hoàng Bảo Khánh - Phó chủ nhiệm.
+          </li>
+        </ul>
+        <h4>Địa chỉ:</h4>
+        <p style="font-size: 13px;">
+          77 Nguyễn Huệ, Phú Nhuận, Thành phố Huế, Thừa Thiên Huế
+        </p>
+      </div>
 
-    document.getElementById('submitBtn').addEventListener('click', function (event) {
 
-      var form = document.getElementById('form');
-      var isValid = form.checkValidity();
-
-      document.getElementById('modalLabel').innerText = "Thông Báo !" 
+    </div>
 
 
-      if (isValid) {
-        document.getElementById('description').innerText = 'Bạn đã đăng kí thành công, vui lòng đợi mail phản hồi !!';
-      } else {
-        document.getElementById('description').innerText = 'Dữ liệu bạn nhập có vấn đề vui lòng thử lại';
-      }
+    <script>
+      //Bật qua site là hiện lên modal
+      document.addEventListener('DOMContentLoaded', function () {
+        var modal = new bootstrap.Modal(document.getElementById('modal'));
+        modal.show();
+      });
 
-      var modal = new bootstrap.Modal(document.getElementById('modal'));
-      modal.show();
-      
-    });
-  </script>
+      document.getElementById('submitBtn').addEventListener('click', function (event) {
+
+        var form = document.getElementById('form');
+        var isValid = form.checkValidity();
+
+        document.getElementById('modalLabel').innerText = "Thông Báo !"
+
+
+        if (isValid) {
+          document.getElementById('description').innerText = 'Bạn đã đăng kí thành công, vui lòng đợi mail phản hồi !!';
+        } else {
+          document.getElementById('description').innerText = 'Dữ liệu bạn nhập có vấn đề vui lòng thử lại';
+        }
+
+        var modal = new bootstrap.Modal(document.getElementById('modal'));
+        modal.show();
+
+      });
+    </script>
+
 </body>
 
 </html>

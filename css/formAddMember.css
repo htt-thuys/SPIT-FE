@@ -1,11 +1,11 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-top: 20vh;
 }
 
 body.bg-img {
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -47,7 +47,33 @@ body {
 
 
 #form_div{
-  background-color: white;
-  border-radius: 10px ;
+  background-color: rgba(255, 255, 255, 0.952);
+  padding: 4vh 4vh;
+  margin-bottom: 10vh;
+  color: black;
+  font-size: 17px;
+  border-radius: 10px;
   border: 3px solid #003056;
+}
+
+.form-control,.form-select{
+  font-size: 20px;
+
+  height: auto;
+}
+
+.form-label {
+  font-size: 18px;
+}
+
+#submitBtn {
+  font-size: 24px;
+  padding: 15px 30px;
+}
+
+h2{
+  font-size: 28px;
+}
+.modal{
+  color: rgb(199, 197, 197);
 }
