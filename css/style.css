@@ -40,13 +40,15 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 #wrapper ul.members li {
     flex-basis: 25%;
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 #wrapper ul.members li img{
     max-width: 100%;
