@@ -108,3 +108,55 @@ li.link-icon:hover{
 .footer path{
     color: white;
 }
+
+.title{
+    overflow-wrap: break-word;
+    text-wrap: balance;
+    word-break: break-word;
+    font-family: Anton,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 800%;
+    padding-bottom: var(--spacer-variable-sm);
+    line-height: 150px;
+}
+
+.subtitle{
+    font-family: Roboto,arial,georgia,sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+p.text, li.text{
+    text-wrap: balance;
+    font-weight: 400;
+    font-family: Roboto,arial,georgia,sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.textarea{
+    margin-top: 30px ;
+}
+
+.div-white{
+    background-image: url(/images/logo-bg/bg-white.png);
+    background-position:center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    color: #0F1923;
+}
+
+.div-blue{
+    background-image: url(/images/logo-bg/bg-blue.png);
+    background-position:center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+}
+
+.main button{
+    font-family: Roboto, arial, georgia, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
