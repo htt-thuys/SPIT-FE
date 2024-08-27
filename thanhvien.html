@@ -40,7 +40,14 @@
             right: 40px;
             cursor: pointer;
         }
-        
+
+        .center-container {
+            display: flex;
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center;    /* Căn giữa theo chiều dọc */
+            height: 15vh;
+        }
+
     </style>
     <nav class="spitbar navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid row align-items-center">
@@ -56,15 +63,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class=" collapse navbar-collapse" id="navbarNav" style="width: auto;     margin-left: 30px; margin-right: 30px;">
-                <ul class="navbar-nav d-flex justify-content-between" style="width: 100%; font-size: 15px; font-weight: bold;">
+
+                <ul class="navbar-nav d-flex justify-content-between" style="width: 100%; font-size: 15px; font-weight: bold; font-family: Neue Frutiger World, Tahoma, sans-serif;;">
+
                     <li class="nav-item dropdown justify-content-start align-items-center" style="padding: 5px 6px;">
                         <a class="nav-link dropdown-toggle" href="/home.html" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             TRANG CHỦ 
                         <span></a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: FF Mark W05, Arial, sans-serif; ">
-                            <li><a class="dropdown-item" href="/home.html#TongQuan"><p>TỔNG QUAN</p></a></li>
-                            <li><a class="dropdown-item" href="/home.html#HoatDong"><p>HOẠT ĐỘNG</p></a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: Neue Frutiger World, Tahoma, sans-serif;">
+                            <li><a class="dropdown-item" href="#TongQuan"><p>TỔNG QUAN</p></a></li>
+                            <li><a class="dropdown-item" href="#HoatDong"><p>HOẠT ĐỘNG</p></a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -112,6 +121,14 @@
             <span style="--i:20">B</span>
             <span style="--i:21">Ộ</span>
         </div>
+        <!-- <div class="center-container">
+            <select name="Members" id="Members-select">
+                <option value="">--Please choose an option--</option>
+                <option value="thanhvien.html">Niên khoá 2023-2024 (Thế hệ F1)</option>
+                <option value="home.html">Niên khoá 2023-2024 (Thế hệ F2)</option>
+                <option value="Other">Đang đợi cập nhật...</option>
+            </select>
+        </div> -->
         <div class="title-container">
             Ban Chủ Nhiệm
         </div>
@@ -666,6 +683,7 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="js/option.js"></script>
 <script>
     $(document).ready(function() {
             // Hide the button initially

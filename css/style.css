@@ -54,6 +54,7 @@
     max-width: 100%;
     height: 300px;
     transition: all 0.3s ease-in-out;
+    border-radius: 35px;
 }
 #wrapper ul.members li:hover .member-top .member-thumb img{
     filter: opacity(80%);
@@ -76,8 +77,9 @@
     position: absolute;
     width: 100%;
     bottom: -50px;
-    transition: 0.25s ease-in-out;
+    transition: 0.15s ease-in-out;
     opacity: 0.85;
+    border-radius: 0 0 20px 20px; /* Trên trái, trên phải, dưới phải, dưới trái */
 }
 #wrapper ul.members li .member-info a{
     text-decoration: none;
@@ -112,3 +114,22 @@
       transform: rotateY(360deg) 
     }
   }
+
+  /* :root {
+    --primary: #de4b3e;
+    --secondary: #C74237;
+  }
+.center-container #Members-select{
+    background-color: var(--primary);
+    color: #fff;
+    font-family: monospace;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+select {
+    padding-left:20px ;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
