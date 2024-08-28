@@ -1,7 +1,7 @@
 //Bật qua site là hiện lên modal
 let modal = new bootstrap.Modal(document.getElementById('modal'));
 document.addEventListener('DOMContentLoaded', function () {
-    let date = '08/30/2024 (mm/dd/yyyy)'
+    let date = '01/01/2024 (mm/dd/yyyy)'
     let openDay = Date.parse(date)
     let dateCurrent = new Date()
     dateCurrent = Date.parse(dateCurrent)
@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         btn1.addEventListener('click', function () {
-            window.location.href = '/home.html'
+            window.location.href = '/index.html'
         })
 
         btn2.addEventListener('click', function () {
-            window.location.href = '/home.html'
+            window.location.href = '/index.html'
         })
 
     }
