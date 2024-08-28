@@ -18,6 +18,7 @@
 </head>
 
 <body class="bg-img d-flex flex-column align-items-center justify-content-center">
+
   <div class="navbar mb-5">
     <nav class="spitbar navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid row align-items-center">
@@ -80,6 +81,7 @@
       </div>
     </nav>
   </div>
+
 
   <div id="form_div" class="container-xs">
     <div class="d-flex flex-column align-items-center">
@@ -157,7 +159,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="modalLabel">Chào Mừng bạn đến với trang đăng ký thành viên của CLB</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button id="callback_header" type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
             </div>
             <div class="modal-body" id="description">
 
@@ -182,8 +185,10 @@
               trình nhé. Chúng mình luôn sẵn sàng chào đón các bạn! <br>
 
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            <div class="modal-footer d-flex justify-content-between">
+              <div id="utc"></div>
+              <button type="button" class="btn btn-secondary fs-3" data-bs-dismiss="modal"
+                id="callback_footer">Đóng</button>
             </div>
           </div>
         </div>
@@ -191,6 +196,8 @@
     </div>
 
   </div>
+
+
   <div class="container-fluid footer">
 
     <div class="container">
@@ -242,38 +249,15 @@
           77 Nguyễn Huệ, Phú Nhuận, Thành phố Huế, Thừa Thiên Huế
         </p>
       </div>
-
-
     </div>
 
-
-    <script>
-      //Bật qua site là hiện lên modal
-      document.addEventListener('DOMContentLoaded', function () {
-        var modal = new bootstrap.Modal(document.getElementById('modal'));
-        modal.show();
-      });
-
-      document.getElementById('submitBtn').addEventListener('click', function (event) {
-
-        var form = document.getElementById('form');
-        var isValid = form.checkValidity();
-
-        document.getElementById('modalLabel').innerText = "Thông Báo !"
+  </div>
 
 
-        if (isValid) {
-          document.getElementById('description').innerText = 'Bạn đã đăng kí thành công, vui lòng đợi mail phản hồi !!';
-        } else {
-          document.getElementById('description').innerText = 'Dữ liệu bạn nhập có vấn đề vui lòng thử lại';
-        }
 
-        var modal = new bootstrap.Modal(document.getElementById('modal'));
-        modal.show();
-
-      });
-    </script>
 
 </body>
+
+<script src="js/formAddmember.js"></script>
 
 </html>
