@@ -312,9 +312,8 @@ a{
     background-color: #464646;
     height: 320px;
 }
-.container_1 .footer .info_media .button_media{
-    display: flex;
-    flex-direction: row;
+li.nav-item:hover{
+    border-bottom: #ffffff solid 3px;
 }
 .footer_title{
     color: white;
