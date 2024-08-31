@@ -8,43 +8,14 @@ body.bg-img {
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 /* Mặc định cho tất cả các màn hình */
 body {
   background-image: url('../images/formAddMemeber/background.jpg');
+  overflow-x: hidden;
 }
-
-@media (max-width: 576px) {
-  body {
-    background-image: url('../images/formAddMemeber/background.jpg');
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  body {
-    background-image: url('../images/formAddMemeber/background.jpg');
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  body {
-    background-image: url('../images/formAddMemeber/background.jpg');
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  body {
-    background-image: url('../images/formAddMemeber/background.jpg');
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    background-image: url('../images/formAddMemeber/background.jpg');
-  }
-}
-
 
 #form_div{
   background-color: rgba(255, 255, 255, 0.952);
