@@ -13,9 +13,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
     <script type="text/javascript"
@@ -94,7 +92,7 @@
         </div>
     </nav>
     <!-- Back to top -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
     <!-- Content -->
     <div class="container-fluid main" style="padding: 0; ">
         <!-- Top content here! -->
@@ -102,8 +100,8 @@
             <div class="carousel-inner">
                 <div class="carousel-item active " style="background-color: black;">
                     <img src="images/home/SPIT-mem.jpg" class="d-block w-100 z-0" style="opacity: 75%;" alt="...">
-                    <h1 data-mdb-animation-on-scroll="repeat" data-mdb-animation-init data-mdb-animation-reset="true"
-                        data-mdb-animation="slide-right" class="fade-in-up carousel-caption z-1 "
+                    <h1 data-aos-duration="800"
+                        class=" carousel-caption z-1 " data-aos="zoom-in" data-aos-offset="100"
                         style="font-family: Neue Frutiger World, Tahoma, sans-serif; font-weight:bolder; font-size:100px; opacity: 80%; top: 30%; line-height: none;">
                         WE ARE SPIT!</h1>
                 </div>
@@ -113,12 +111,13 @@
         <!-- Tổng quan về CLB -->
         <div class="container-fluid p-50 div-white" id="TongQuan">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-5 col-xs-10 p-l-50" style="color: black;">
-                    <h2 class="title">Tổng quan</h2>
+                <div class="col-lg-5 col-xs-10 p-l-50" style="color: #0F1923;">
+                    <h2 class="title" data-aos="fade-right">Tổng quan</h2>
 
                     <div class="container m-5 textarea">
-                        <h3 class="subtitle">// WE ARE SPIT</h3>
-                        <p class="text">
+                        <h3 class="subtitle" data-aos-easing="linear" data-aos="fade-right" >
+                            // WE ARE SPIT</h3>
+                        <p data-aos="zoom-in" data-aos-duration="5000" data-aos-easing="linear" class="text">
                             CLB Hỗ trợ Lập trình (Support Programming Information Technology, viết tắt SPIT) Trường Đại
                             học Khoa học Huế, được thành lập vào ngày 18/9/2023 dưới sự chỉ đạo của Hội Sinh viên trường
                             và ban cố vấn thuộc Khoa Công nghệ thông tin, Trường Đại học Khoa học, Đại học Huế.
@@ -126,8 +125,8 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-xs-10 p-30">
-                    <img src="images/home/SPIT-girls.JPG" alt="" class="rounded-5 img-fluid"
-                        style="border:solid black 3px; border-radius: 7px;">
+                    <img data-aos="zoom-in-left" data-aos-duration="600" src="images/home/SPIT-girls.JPG" alt="" class="rounded-5 img-fluid"
+                        style="border:solid black 3pdx; border-radius: 7px;">
                 </div>
             </div>
         </div>
@@ -135,21 +134,21 @@
         <div class="container-fluid p-50 div-blue" id="HoatDong">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-5 col-xs-10 p-30">
-                    <img src="images/activities/seminar-2.jpg" alt="" class="rounded-5 img-fluid"
+                    <img data-aos="zoom-in-right" data-aos-duration="600" src="images/activities/seminar-2.jpg" alt="" class="rounded-5 img-fluid"
                         style="border:solid #ece8e1 3px; border-radius: 7px;">
                 </div>
                 <div class="col-lg-5 col-xs-10 p-l-50 d-flex flex-column justify-content-start" style="color: #ece8e1">
-                    <h2 class="title" data-mdb-animation-init data-mdb-animation-reset="true" data-mdb-animation="slide-out-right" data-mdb-animation-start="onScroll">HOẠT ĐỘNG</h2>
+                    <h2 class="title" data-aos="fade-left">HOẠT ĐỘNG</h2>
                     <div class="container m-5 textarea">
-                        <h3 class="subtitle">// OUR ACTIVITIES</h3>
-                        <p class="text">
+                        <h3 data-aos="fade-left" data-aos-easing="linear" class="subtitle" >// OUR ACTIVITIES</h3>
+                        <p class="text" data-aos="zoom-in" data-aos-duration="5000" data-aos-easing="linear">
                             Các hoạt động của CLB xoay quanh việc đồng hành cùng thầy cô trong quá trình hướng dẫn và
                             sửa chữa bài tập với các môn học tập trình căn bản, tổ chức các buổi seminar và hỗ trợ các
                             cuộc thi học thuật của khoa và nhà trường.
                         </p>
                     </div>
                     <a href="introduce.html" class="align-self-center">
-                        <button class="btn btn-outline-light btn-lg ">TÌM HIỂU</button>
+                        <button data-aos="zoom-in" data-aos-duration="5000" data-aos-easing="" class="btn btn-outline-light btn-lg ">TÌM HIỂU</button>
                     </a>
                 </div>
 
@@ -165,13 +164,13 @@
             <div class="col-auto d-flex flex-column justify-content-center">
 
                 <ul class="row d-flex justify-content-center">
-                    <li class="col-auto "><a class="d-flex justify-content-end" href="#"><img style="width: 70px;"
+                    <li class="col-auto link-logo"><a class="d-flex justify-content-end" href="#"><img style="width: 70px;"
                                 src="images/logo-bg/logo_HUSC.png" alt=""></a>
                     </li>
-                    <li class="col-auto"><a href="#"><img style="width: 80px;" src="images/logo-bg/logo_KCNTT.png"
+                    <li class="col-auto link-logo"><a href="#"><img style="width: 80px;" src="images/logo-bg/logo_KCNTT.png"
                                 alt=""></a>
                     </li>
-                    <li class="col-auto"><a class="d-flex justify-content-start" href="#"><img style="width: 80px;"
+                    <li class="col-auto link-logo"><a class="d-flex justify-content-start" href="#"><img style="width: 80px;"
                                 src="images/logo-bg/logo-SPIT.png" alt=""></a>
                     </li>
                 </ul>
@@ -192,9 +191,7 @@
                 </ul>
             </div>
             <div class="col-auto d-flex flex-column  align-items-center p-t-50px">
-                <h3 class="text-center">
-                    Thông tin liên hệ
-                </h3>
+            
                 <h4 class="col-auto m-0">Địa chỉ Email: </h4>
                 <a style="font-size: 14px;" class="col-auto"
                     href="mailto:clbhtlt.ithusc@gmail.com">clbhtlt.ithusc@gmail.com </a>
@@ -218,6 +215,37 @@
 
         </div>
     </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 
 </html>

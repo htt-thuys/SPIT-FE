@@ -37,7 +37,7 @@ a.nav-link:hover{
     color: #ffffff;
     /* border-bottom:  solid #ffffff; */
     background-color: #ffffff25;
-
+    transition: transform 0.3s ease-in-out
 }
 
 
@@ -53,6 +53,7 @@ a.nav-link:hover{
 .dropdown-menu a:hover{
     background: #0F1923;
     color: #ffffff;
+    transition: transform 0.3s ease-in-out
 }
 
 
@@ -66,6 +67,7 @@ a.nav-link:hover{
 
 .dropdown-menu p:hover{
     background-color: rgba(255, 255, 255, 0.086);
+    transition: transform 0.3s ease-in-out
 }
 
 li.nav-item{
@@ -74,12 +76,13 @@ li.nav-item{
 
 li.nav-item:hover{
     border-bottom: #ffffff solid 3px;
+    transition: transform 0.3s ease-in-out
 }
 
 .footer{
     background: #0F1923;
-    height: max-content;
     color: white;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
 }
 
 li.link-icon{
@@ -94,11 +97,7 @@ li.link-icon{
 
 li.link-icon:hover{
     background: #ffffff30;
-}
-
-.footer{
-    color: #ffffffb7;
-    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    transition: transform 0.3s ease-in-out
 }
 
 .footer a{
@@ -146,6 +145,11 @@ p.text, li.text{
     background-repeat:  no-repeat;
     background-size: cover;
     color: #0F1923;
+    min-height: 500px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .div-blue{
@@ -153,6 +157,11 @@ p.text, li.text{
     background-position:center;
     background-repeat:  no-repeat;
     background-size: cover;
+    min-height: 600px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main button{
@@ -160,3 +169,30 @@ p.text, li.text{
     font-weight: bold;
     font-size: large;
 }
+
+/* Link-logo */
+.link-logo:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out
+}
+
+/* Button Back-to-top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
