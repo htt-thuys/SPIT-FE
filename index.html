@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/font.css">
-    <link rel="icon" href="images/logo-bg/logo-SPIT.png">
-    <link rel="icon" href="images/home/logo-500x500.png">
+    <link rel="icon" href="images/logo-bg/SPIT-top.png">
     <title>SPIT - Trang chủ</title>
 </head>
 
@@ -24,7 +36,7 @@
             <a class="navbar-brand col-md-5 col" style="justify-content: center;" href="index.html">
                 <div class="row d-flex align-items-center justify-content-center text-md-start">
                     <div class="col-3 col-sm-3 text-sm-center" style="padding: 0;"> <img
-                            src="images/logo-bg/logo-SPIT.png" alt="" style="width: 50px;">
+                            src="images/logo-bg/SPIT-top.png" alt="" style="width: 50px;">
                     </div>
                     <p class="col d-sm-block d-none"
                         style="margin: 0; width: fit-content; padding: 0; font-family: Anton,sans-serif  ; font-size:x-large">
@@ -79,6 +91,8 @@
             </div>
         </div>
     </nav>
+    <!-- Back to top -->
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
     <!-- Content -->
     <div class="container-fluid main" style="padding: 0; ">
         <!-- Top content here! -->
@@ -86,21 +100,24 @@
             <div class="carousel-inner">
                 <div class="carousel-item active " style="background-color: black;">
                     <img src="images/home/SPIT-mem.jpg" class="d-block w-100 z-0" style="opacity: 75%;" alt="...">
-                    <h1 class=" carousel-caption z-1 "
+                    <h1 data-aos-duration="800"
+                        class=" carousel-caption z-1 " data-aos="zoom-in" data-aos-offset="100"
                         style="font-family: Neue Frutiger World, Tahoma, sans-serif; font-weight:bolder; font-size:100px; opacity: 80%; top: 30%; line-height: none;">
                         WE ARE SPIT!</h1>
                 </div>
             </div>
         </div>
+
         <!-- Tổng quan về CLB -->
         <div class="container-fluid p-50 div-white" id="TongQuan">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-5 col-xs-10 p-l-50" style="color: black;">
-                    <h2 class="title">Tổng quan</h2>
+                <div class="col-lg-5 col-xs-10 p-l-50" style="color: #0F1923;">
+                    <h2 class="title" data-aos="fade-right">Tổng quan</h2>
 
                     <div class="container m-5 textarea">
-                        <h3 class="subtitle">// WE ARE SPIT</h3>
-                        <p class="text">
+                        <h3 class="subtitle" data-aos-easing="linear" data-aos="fade-right" >
+                            // WE ARE SPIT</h3>
+                        <p data-aos="zoom-in" data-aos-duration="5000" data-aos-easing="linear" class="text">
                             CLB Hỗ trợ Lập trình (Support Programming Information Technology, viết tắt SPIT) Trường Đại
                             học Khoa học Huế, được thành lập vào ngày 18/9/2023 dưới sự chỉ đạo của Hội Sinh viên trường
                             và ban cố vấn thuộc Khoa Công nghệ thông tin, Trường Đại học Khoa học, Đại học Huế.
@@ -108,8 +125,8 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-xs-10 p-30">
-                    <img src="images/home/SPIT-girls.JPG" alt="" class="rounded-5 img-fluid"
-                        style="border:solid black 3px; border-radius: 7px;">
+                    <img data-aos="zoom-in-left" data-aos-duration="600" src="images/home/SPIT-girls.JPG" alt="" class="rounded-5 img-fluid"
+                        style="border:solid black 3pdx; border-radius: 7px;">
                 </div>
             </div>
         </div>
@@ -117,60 +134,64 @@
         <div class="container-fluid p-50 div-blue" id="HoatDong">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-5 col-xs-10 p-30">
-                    <img src="images/activities/seminar-2.jpg" alt="" class="rounded-5 img-fluid"
+                    <img data-aos="zoom-in-right" data-aos-duration="600" src="images/activities/seminar-2.jpg" alt="" class="rounded-5 img-fluid"
                         style="border:solid #ece8e1 3px; border-radius: 7px;">
                 </div>
                 <div class="col-lg-5 col-xs-10 p-l-50 d-flex flex-column justify-content-start" style="color: #ece8e1">
-                    <h2 class="title">HOẠT ĐỘNG</h2>
+                    <h2 class="title" data-aos="fade-left">HOẠT ĐỘNG</h2>
                     <div class="container m-5 textarea">
-                        <h3 class="subtitle">// OUR ACTIVITIES</h3>
-                        <p class="text">
+                        <h3 data-aos="fade-left" data-aos-easing="linear" class="subtitle" >// OUR ACTIVITIES</h3>
+                        <p class="text" data-aos="zoom-in" data-aos-duration="5000" data-aos-easing="linear">
                             Các hoạt động của CLB xoay quanh việc đồng hành cùng thầy cô trong quá trình hướng dẫn và
                             sửa chữa bài tập với các môn học tập trình căn bản, tổ chức các buổi seminar và hỗ trợ các
                             cuộc thi học thuật của khoa và nhà trường.
                         </p>
                     </div>
                     <a href="introduce.html" class="align-self-center">
-                        <button class="btn btn-outline-light btn-lg ">TÌM HIỂU</button>
+                        <button data-aos="zoom-in" data-aos-duration="5000" data-aos-easing="" class="btn btn-outline-light btn-lg ">TÌM HIỂU</button>
                     </a>
                 </div>
 
             </div>
         </div>
     </div>
+    <div id="backtop" style="">
+        <i class="bi bi-caret-up-fill"></i>
+    </div>
     <!-- Footer here -->
     <div class="container-fluid footer p-30">
-        <div class="container">
-            <ul class="row d-flex justify-content-center">
-                <li class="col-auto link-icon p-l-15 p-r-15 p-b-5"><a href="#" class="link-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path
-                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                        </svg></a></li>
-                <li class="col-auto link-icon p-l-15 p-r-15 p-b-5"><a href="#" class="link-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-discord" viewBox="0 0 16 16">
-                            <path
-                                d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
-                        </svg>
-                    </a></li>
-            </ul>
-            <ul class="row d-flex justify-content-center">
-                <li class="col-auto "><a class="d-flex justify-content-end" href="#"><img style="width: 70px;"
-                            src="images/logo-bg/logo_HUSC.png" alt=""></a>
-                </li>
-                <li class="col-auto"><a href="#"><img style="width: 80px;" src="images/logo-bg/logo_KCNTT.png"
-                            alt=""></a>
-                </li>
-                <li class="col-auto"><a class="d-flex justify-content-start" href="#"><img style="width: 80px;"
-                            src="images/logo-bg/logo-SPIT.png" alt=""></a>
-                </li>
-            </ul>
-            <div class="d-flex flex-column justify-content-center align-items-center p-t-50px">
-                <h3 class="text-center">
-                    Thông tin liên hệ
-                </h3>
+        <div class=" row justify-content-evenly">
+            <div class="col-auto d-flex flex-column justify-content-center">
+
+                <ul class="row d-flex justify-content-center">
+                    <li class="col-auto link-logo"><a class="d-flex justify-content-end" href="#"><img style="width: 70px;"
+                                src="images/logo-bg/logo_HUSC.png" alt=""></a>
+                    </li>
+                    <li class="col-auto link-logo"><a href="#"><img style="width: 80px;" src="images/logo-bg/logo_KCNTT.png"
+                                alt=""></a>
+                    </li>
+                    <li class="col-auto link-logo"><a class="d-flex justify-content-start" href="#"><img style="width: 80px;"
+                                src="images/logo-bg/logo-SPIT.png" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="row d-flex justify-content-center">
+                    <li class="col-auto link-icon p-l-15 p-r-15 p-b-5"><a href="#" class="link-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a></li>
+                    <li class="col-auto link-icon p-l-15 p-r-15 p-b-5"><a href="#" class="link-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-discord" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col-auto d-flex flex-column  align-items-center p-t-50px">
+            
                 <h4 class="col-auto m-0">Địa chỉ Email: </h4>
                 <a style="font-size: 14px;" class="col-auto"
                     href="mailto:clbhtlt.ithusc@gmail.com">clbhtlt.ithusc@gmail.com </a>
@@ -194,6 +215,37 @@
 
         </div>
     </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 
 </html>
