@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         btn1.addEventListener('click', function () {
-            window.location.href = '/index.html'
+            window.location.href = '/SPIT-FE'
         })
 
         btn2.addEventListener('click', function () {
-            window.location.href = '/index.html'
+            window.location.href = '/SPIT-FE'
         })
 
     }
