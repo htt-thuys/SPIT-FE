@@ -1,3 +1,4 @@
+
 .slider{
     width: 1300px;
     max-width: 95vw;
@@ -239,8 +240,7 @@ body{
     font-size: 15px;
 }
 .main_content .baiviet1:hover {
-    background-color: #c9c9c9;
-    transform: scale(1.03, 1.03);  
+    background-color: #c9c9c9a3;
     cursor: pointer;
     height: 150px;
 }
@@ -351,7 +351,6 @@ body{
     background-color: #0056b3;
     transform: scale(1.1); /* Phóng to button khi hover */
 }
-/* footer */
 
 .main{
     background-color: #003056;
@@ -409,11 +408,7 @@ li.nav-item{
 li.nav-item:hover{
     border-bottom: #ffffff solid 3px;
 }
-.footer{
-    background: #0F1923;
-    height: max-content;
-    color: white;
-}
+
 
 li.link-icon{
     margin: 10px;
@@ -429,18 +424,7 @@ li.link-icon:hover{
     background: #ffffff30;
 }
 
-.footer{
-    color: #ffffffb7;
-    font-family: "Neue Frutiger World",Tahoma,sans-serif;
-}
 
-.footer a{
-    color: hsl(215, 50%, 49%) ;
-}
-
-.footer path{
-    color: white;
-}
 
 .title{
     overflow-wrap: break-word;
@@ -532,4 +516,64 @@ p.text, li.text{
 }
 .container .information .list-phone li {
     padding-top: 7px;
+}
+/* Layout footer */
+.footer{
+    background: #0F1923;
+    height: max-content;
+    color: white;
+    padding: 30px;
+}
+
+.row{
+    display: flex !important; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer li{
+    list-style: none;
+    padding:  5px;
+}
+
+.footer{
+    color: #ffffff;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+}
+
+.footer a{
+    color: hsl(215, 50%, 49%) ;
+    text-decoration: none;
+}
+
+.footer path{
+    color: white;
+}
+
+.footer  .info{
+    align-items: center;
+}
+
+.icon-link li{
+    padding: 10px 15px 7px 15px;
+}
+
+.logo-link li:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out
+}
+
+.logo-link li{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.footer h4{
+    font-weight: normal;
+    margin-top: 10px;
 }
