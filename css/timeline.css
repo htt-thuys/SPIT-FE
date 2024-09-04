@@ -1,0 +1,233 @@
+/* Boostrap icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+* {
+    box-sizing: border-box;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ece8e1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 50px;
+}
+.div-white .timeline::after{
+    background-color: #023a67;
+}
+/* container-tl around content */
+.container-tl {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container-tl::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -15px;
+    background-color: #023a67;
+    border: 6px solid #ece8e1;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.div-white .container-tl::after{
+    background-color: #ece8e1;
+    border: 6px solid #023a67;
+}
+
+/* Place the container-tl to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container-tl to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container-tl (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 31px;
+    border: medium solid #ece8e1;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #ece8e1;
+}
+
+.div-white .left::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 31px;
+    border: medium solid #023a67;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #023a67;
+}
+
+/* Add arrows to the right container-tl (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 31px;
+    border: medium solid #ece8e1;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ece8e1 transparent transparent;
+}
+
+.div-white .right::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 31px;
+    border: medium solid #023a67;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #023a67 transparent transparent;
+}
+
+/* Fix the circle for container-tls on the right side */
+.right::after {
+    left: -15px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: #ece8e1;
+    position: relative;
+    border-radius: 6px;
+}
+
+.div-white .content{
+    background-color: #023a67;
+}
+
+.content h2{
+    color: #1b344e;
+    font-size: 30px;
+    font-weight: normal;
+    font-family:Anton,sans-serif;
+}
+
+.div-white .content h2{
+    color: antiquewhite;
+}
+
+.content h3{
+    color: #527897;
+    font-size: 13px;
+    font-weight: normal;
+    font-family:  Roboto, arial, georgia, sans-serif;;
+}
+
+.div-white .content h3{
+    color: wheat;
+}
+
+.content p {
+    margin-top: 10px;
+    color: #023a67;
+    font-size: 15px;
+}
+
+.div-white .content p{
+    color: #ece8e1;
+    list-style: none;
+    font-size: 15px;
+    margin: 0;
+}
+
+.div-white .content a{
+    color: wheat;
+    font-size: 20px;
+}
+
+.div-white .content button{
+    align-self:center ;
+    height: 40px;
+    border-radius: 7px;
+    border: #ece8e1 solid 2px;
+    color: #023a67;
+    transition: 0.5s;
+    width: 75px;
+}
+
+.expert{
+    background-color: #527897;
+}
+
+.div-white .content button:hover{
+    transform: translate(10px, 0);
+    
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width container-tls */
+    .container-tl {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container-tl::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    .div-white .container-tl::before{
+        border: medium solid #023a67;
+        border-color: transparent #023a67 transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right container-tls behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}

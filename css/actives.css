@@ -1,39 +1,42 @@
-body{
+
+
+body {
     padding-top: 67px;
 }
 
-.main{
+.main {
     background-color: #003056;
 }
 
-.spitbar{
-   background-color: #0F1923;
+.spitbar {
+    background-color: #0F1923;
 }
 
-li.col{
+li.col {
     list-style: none;
     padding: 0;
     width: fit-content;
     text-align: center;
 }
 
-a.nav-link{
+a.nav-link {
     border-radius: 7px;
     padding: 5px;
     width: fit-content;
 }
 
-.bar-section{
+.bar-section {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: flex-start;
 }
+
 /* 
     bodycolor: #0F1923
     default: #003056
     */
-a.nav-link:hover{
+a.nav-link:hover {
     color: #ffffff;
     /* border-bottom:  solid #ffffff; */
     background-color: #ffffff25;
@@ -41,53 +44,54 @@ a.nav-link:hover{
 }
 
 
-.dropdown-menu a{
+.dropdown-menu a {
     background: #0F1923;
     color: #ffffff7b;
     border-radius: 7px;
 }
-.dropdown-menu.show{
-    background-color: #0F1923 ;
+
+.dropdown-menu.show {
+    background-color: #0F1923;
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
     background: #0F1923;
     color: #ffffff;
     transition: transform 0.3s ease-in-out
 }
 
 
-.dropdown-menu p{
-    padding: 0px ;
+.dropdown-menu p {
+    padding: 0px;
     border-radius: 7px;
-    font-family: "FF Mark W05", Arial, sans-serif; 
+    font-family: "FF Mark W05", Arial, sans-serif;
     font-weight: bolder;
     font-size: larger;
 }
 
-.dropdown-menu p:hover{
+.dropdown-menu p:hover {
     background-color: rgba(255, 255, 255, 0.086);
     transition: transform 0.3s ease-in-out
 }
 
-li.nav-item{
+li.nav-item {
     border-bottom: #0F1923 solid 3px;
 }
 
-li.nav-item:hover{
+li.nav-item:hover {
     border-bottom: #ffffff solid 3px;
     transition: transform 0.3s ease-in-out
 }
 
-.footer{
+.footer {
     background: #0F1923;
     color: white;
-    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
 }
 
-li.link-icon{
+li.link-icon {
     margin: 10px;
-    background: #ffffff20 ;
+    background: #ffffff20;
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -95,24 +99,25 @@ li.link-icon{
     padding: 2px;
 }
 
-li.link-icon:hover{
+li.link-icon:hover {
     background: #ffffff30;
     transition: transform 0.3s ease-in-out
 }
 
-.footer a{
-    color: hsl(215, 50%, 49%) ;
+.footer a {
+    color: hsl(215, 50%, 49%);
 }
 
-.footer path{
+.footer path {
     color: white;
 }
 
-.title{
+.title {
+    margin-left: 80px;
     overflow-wrap: break-word;
     text-wrap: balance;
     word-break: break-word;
-    font-family: Anton,sans-serif;
+    font-family: Anton, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 800%;
@@ -120,29 +125,30 @@ li.link-icon:hover{
     line-height: 150px;
 }
 
-.subtitle{
-    font-family: Roboto,arial,georgia,sans-serif;
+.subtitle {
+    font-family: Roboto, arial, georgia, sans-serif;
     font-weight: bold;
     font-size: large;
 }
 
-p.text, li.text{
+p.text,
+li.text {
     text-wrap: balance;
     font-weight: 400;
-    font-family: Roboto,arial,georgia,sans-serif;
+    font-family: Roboto, arial, georgia, sans-serif;
     font-size: 18px;
     line-height: 28px;
     font-weight: 100;
 }
 
-.textarea{
-    margin-top: 30px ;
+.textarea {
+    margin-top: 30px;
 }
 
-.div-white{
+.div-white {
     background-image: url(images/logo-bg/bg-white.png);
-    background-position:center;
-    background-repeat:  no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     color: #0F1923;
     min-height: 600px;
@@ -152,10 +158,10 @@ p.text, li.text{
     justify-content: center;
 }
 
-.div-blue{
+.div-blue {
     background-image: url(images/logo-bg/bg-blue.png);
-    background-position:center;
-    background-repeat:  no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     padding: auto;
@@ -164,14 +170,14 @@ p.text, li.text{
     justify-content: center;
 }
 
-.main button{
+.main button {
     font-family: Roboto, arial, georgia, sans-serif;
     font-weight: bold;
     font-size: large;
 }
 
 /* Link-logo */
-.link-logo:hover{
+.link-logo:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out
 }
@@ -191,8 +197,77 @@ p.text, li.text{
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: #555;
-  }
+}
+
+/* Card */
+.card {
+    color: #0F1923;
+    transition: 0.5s;
+    min-height: 350px;
+    padding-top: 7px;
+    margin: 20px;
+}
+
+.card h5 {
+    font-family: Neue Frutiger World, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 15px;
+    color: #023a67;
+}
+
+.card p {
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 5px;
+    color: #023a67;
+    font-family: Roboto,arial,georgia,sans-serif;
+}
+
+.card:hover {
+    transform: translate(0px, -20px) !important;
+    color: #555;
+    cursor: pointer;
+}
+
+.card .title {
+    font-size: xx-large;
+    margin: 0;
+    line-height: 50px;
+    color: #003056;
+}
+
+.card-title {
+    margin: 5px !important;
+    padding-left: 15px;
+}
+
+.card-text {
+    padding-left: 30px !important;
+    padding-bottom: 20px;
+}
+
+.off{
+    align-self: end;
+    padding: 5px 15px;
+    border: red solid 1px;
+    border-radius: 5px;
+    color: red;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.on{
+    align-self: end;
+    padding: 5px 15px;
+    border: green solid 1px;
+    border-radius: 5px;
+    color: green;
+    font-size: 14px;
+    font-weight: lighter;
+}
