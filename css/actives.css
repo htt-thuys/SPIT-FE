@@ -146,7 +146,7 @@ li.text {
 }
 
 .div-white {
-    background-image: url(images/logo-bg/bg-white.png);
+    background-image: url('../images/logo-bg/bg-white.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,7 +159,7 @@ li.text {
 }
 
 .div-blue {
-    background-image: url(images/logo-bg/bg-blue.png);
+    background-image: url('../images/logo-bg/bg-blue.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
